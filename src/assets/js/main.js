@@ -5,8 +5,8 @@ import 'bootstrap';
 
 import '../scss/styles.scss';
 
-const buttons = document.querySelectorAll(".filter-btn");
-const products = document.querySelectorAll(".product-item");
+const buttons = document.querySelectorAll(".trending-btn button");
+const products = document.querySelectorAll(".product-card");
 
 buttons.forEach(button => {
 
@@ -19,7 +19,7 @@ buttons.forEach(button => {
 
         products.forEach(product => {
 
-            if(product.dataset.category === category){
+            if(product.classList.contains(category)){
                 product.style.display = "block";
             }else{
                 product.style.display = "none";
