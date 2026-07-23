@@ -1,0 +1,76 @@
+.footer{
+    background:$primary;
+    padding:$p-80 0;
+}
+
+.footer-logo{
+    color:$white;
+    font-size:$fs-48;
+    font-weight:$fw-700;
+}
+
+.footer-text{
+    color:$secondary;
+    font-size:$fs-16;
+    line-height:28px;
+    margin:$p-20 0 $p-30;
+}
+
+.subscribe{
+    display:flex;
+    gap:15px;
+}
+
+.subscribe input{
+    width:250px;
+    height:50px;
+    border:1px solid $border;
+    border-radius:$radius-lg;
+    background:transparent;
+    color:$white;
+    padding:0 20px;
+}
+
+.subscribe button{
+    width:110px;
+    height:50px;
+    border:none;
+    border-radius:$radius-lg;
+    background:$white;
+    color:$primary;
+    transition:$transition;
+}
+
+.footer h6{
+    color:$white;
+    margin-bottom:$p-20;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+.footer ul li a{
+    color:$secondary;
+}
+
+.footer ul li a:hover{
+    color:$white;
+}
+
+@media(max-width:991px){
+
+    .footer{
+        text-align:center;
+    }
+
+    .subscribe{
+        flex-direction:column;
+    }
+
+    .subscribe input,
+    .subscribe button{
+        width:100%;
+    }
+
+}

@@ -1,0 +1,181 @@
+.header{
+    width:100%;
+    background:$white;
+}
+
+/*====================
+Top Header
+=====================*/
+
+.top-header{
+    padding:$p-12 0;
+    border-bottom:1px solid $border;
+}
+
+.top-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.top-left,
+.top-right{
+    display:flex;
+    gap:20px;
+}
+
+.top-header a{
+    color:$secondary;
+    font-size:$fs-14;
+    transition:$transition;
+}
+
+.top-header a:hover{
+    color:$primary;
+}
+
+/*====================
+Main Header
+=====================*/
+
+.main-header{
+    padding:$p-20 0;
+}
+
+.main-header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+/* Logo */
+
+.logo h2{
+    color:$primary;
+    font-size:$fs-32;
+    font-weight:$fw-700;
+}
+
+/* Search */
+
+.search-box{
+    width:380px;
+    max-width:380px;
+    display:flex;
+    align-items:center;
+    border:1px solid $border;
+    border-radius:$radius-lg;
+    overflow:hidden;
+}
+
+.search-box input{
+    width:100%;
+    border:none;
+    padding:12px 20px;
+}
+
+.search-box button{
+    width:55px;
+    height:50px;
+    border:none;
+    background:$white;
+}
+
+.search-box i{
+    font-size:$fs-18;
+}
+
+/* Menu */
+
+.menu ul{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:0;
+    padding:0;
+}
+
+.menu a{
+    color:$primary;
+    font-size:$fs-16;
+    font-weight:$fw-500;
+    transition:$transition;
+}
+
+.menu a:hover{
+    color:$secondary;
+}
+
+/* Icons */
+
+.icons{
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+}
+
+.icons a{
+    color:$primary;
+    font-size:$fs-22;
+    transition:$transition;
+}
+
+.icons a:hover{
+    color:$secondary;
+}
+
+/*====================
+Responsive
+=====================*/
+
+@media(max-width:992px){
+
+    .top-header{
+        display:none;
+    }
+
+    .main-header .container{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .logo{
+        text-align:center;
+    }
+
+    .search-box{
+        width:100%;
+    }
+
+    .menu{
+        width:100%;
+    }
+
+    .menu ul{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .icons{
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .logo h2{
+        font-size:28px;
+    }
+
+    .menu ul{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .search-box{
+        margin-top:15px 0;
+    }
+
+}
