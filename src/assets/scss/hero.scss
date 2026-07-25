@@ -173,3 +173,32 @@
 }
 
 }
+.mobile-scroll{
+    display:none;
+}
+
+@media (max-width:576px){
+
+/* Desktop right cards hide */
+.right-side{
+    display:none;
+}
+
+/* Mobile scroll show */
+.mobile-scroll{
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+}
+
+.mobile-scroll::-webkit-scrollbar{
+    display:none;
+}
+
+.mobile-scroll > div{
+    flex:0 0 85%;
+}
+
+}

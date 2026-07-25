@@ -1,32 +1,25 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 import 'bootstrap';
-
 import '../scss/styles.scss';
 
-const buttons = document.querySelectorAll(".trending-btn button");
-const products = document.querySelectorAll(".product-card");
+const buttons = document.querySelectorAll(".btn-filter");
+const products = document.querySelectorAll(".products");
 
 buttons.forEach(button => {
-
     button.addEventListener("click", () => {
 
+        // Active button
         buttons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
 
-        const category = button.dataset.filter;
-
+        // Sab products hide
         products.forEach(product => {
-
-            if(product.classList.contains(category)){
-                product.style.display = "block";
-            }else{
-                product.style.display = "none";
-            }
-
+            product.style.display = "none";
         });
 
+        // Sirf selected product show
+        const filter = button.dataset.filter;
+        document.getElementById(filter + "-products").style.display = "block";
     });
-
 });
