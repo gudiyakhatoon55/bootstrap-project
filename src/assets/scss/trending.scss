@@ -45,7 +45,6 @@
 
     .product-img{
         height:300px;
-        background:#F5F5F5;
         border-radius:20px;
         display:flex;
         justify-content:center;
@@ -64,18 +63,23 @@
         object-fit:cover;
     }
     
-        /* Shorts */
-    .shorts-img img{
-        width:100%;
-        height:100%;
-        object-fit:cover;
-    }
     /* Shorts */
     .shorts-img img{
         width:100%;
         height:300px;
         object-fit:cover;
     }
+    .jacket-img img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .t-shirt-imag img{
+        width: 90%;
+        height: 90%;
+        object-fit: contain;
+    }
+
 
 
     /* Large Images */
@@ -110,10 +114,12 @@
 
         transition: .3s;
     }
+    .wishlist-btn.red-bg {
+        background: red;
+    }
 
-    .wishlist-btn:hover {
-        background: #7c3aed;
-        color: #fff;
+    .wishlist-btn.red-bg i {
+        color: white;
     }
 
     .wishlist-btn i {
