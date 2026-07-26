@@ -39,6 +39,7 @@ buttons.forEach(button => {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function () {
 
     const button = document.getElementById("mobileMenuBtn");
