@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E commerce</title>
+    <!-- ✅ Ye hona chahiye -->
+    <link rel="stylesheet" href="./assets/scss/styles.scss">
+
     <link rel="icon" href="./assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,28 +41,46 @@
                 <h2>ECOMMERCE</h2>
             </div>
 
-            <div class="search-box">
-                <input type="text" placeholder="Search here">
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
+            <!-- MOBILE BUTTON -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="bi bi-list"></i>
+            </button>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">All Category</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">Special Event</a></li>
-                </ul>
-            </nav>
+            <!-- MENU CONTENT -->
+            <div class="mobile-menu" id="mobileMenu">
 
-            <div class="icons">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-person"></i>
-                <i class="bi bi-cart3"></i>
+                <div class="search-box">
+                    <input type="text" placeholder="Search here">
+
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                All Category
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                        </li>
+
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Special Event</a></li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#"><i class="bi bi-person"></i></a>
+                    <a href="#"><i class="bi bi-cart3"></i></a>
+                </div>
+
             </div>
 
         </div>
+    </div>
     </div>
 
 </header>
@@ -181,17 +202,52 @@
 
         </div>
 
-        <div class="casual-content">
-            <h2>Casual Inspirations</h2>
+        <div class="desktop-casual">
+            <div class="row mt-3 g-3">
 
-            <p>
-                Our favorite combinations for casual outfit that can inspire
-                you to apply on your daily activity.
-            </p>
+                <!-- Left -->
+                <div class="col-lg-4">
+                    <div class="casual-content">
+                        <h2>Casual Inspirations</h2>
 
-            <a href="#" class="browse-btn">
-                BROWSE INSPIRATIONS
-            </a>
+                        <p>
+                            Our favorite combinations for casual outfit that can inspire
+                            you to apply on your daily activity.
+                        </p>
+
+                        <a href="#" class="browse-btn">
+                            BROWSE INSPIRATIONS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle -->
+                <div class="col-lg-4">
+                    <div class="casual-card">
+                        <img src="./assets/images/image/man-image.png" alt="">
+                        <div class="casual-overlay">
+                            <h3>Say it <br> with Shirt</h3>
+                            <div class="arrow-btn">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-4">
+                    <div class="casual-card">
+                        <img src="./assets/images/image/girl-image.png" alt="">
+                        <div class="casual-overlay">
+                            <h3>Funky never <br> get old</h3>
+                            <div class="arrow-btn">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
@@ -863,9 +919,9 @@
     </div>
 </section>
 <section class="py-4">
-        <div class="container">
+    <div class="container">
 
-            <hr class="my-4">
+        <hr class="my-4">
 
             <div class="row align-items-center">
 
@@ -930,40 +986,267 @@
                 </div>
 
             </div>
+        </hr>   
+    </div>
+</section>
+<section class="testimonial-section py-4">
+    <div class="container">
+
+        <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
+            <div class="carousel-inner rounded-5">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="position-relative overflow-hidden rounded-5">
+
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="position-relative overflow-hidden rounded-5">
+
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="position-relative overflow-hidden rounded-5">
+
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
-    </section>
-<section class="testimonial-section py-5">
+
+    </div>
+</section>
+<!-- =========================
+     WHY YOU'LL LOVE
+========================= -->
+
+<section class="love-section">
 
     <div class="container">
 
-        <div id="testimonialCarousel"
-             class="carousel slide"
-             data-bs-ride="carousel"
-             data-bs-interval="3000">
+        <h2>
+            Why you’ll love to<br>
+            shop on our website
+        </h2>
 
-            <div class="carousel-inner">
+        <div class="love-cards">
 
-                <!-- Image 1 -->
-                <div class="carousel-item active">
-                    <img src="./assets/images/image/girl.png"
-                         class="testimonial-img"
-                         alt="Testimonial 1">
+            <!-- CARD 1 -->
+            <div class="love-card">
+
+                <div class="love-icon">
+                    <img src="./assets/images/icon/heart-icon.png" alt="Take care with love">
                 </div>
 
-                <!-- Image 2 -->
-                <div class="carousel-item">
-                    <img src="./assets/images/image/girl.png"
-                         class="testimonial-img"
-                         alt="Testimonial 2">
+                <h3>Take care with love</h3>
+
+                <p>
+                    We take your package with full of attention
+                    and of course full of love. We want to make sure
+                    you’ll receive your package like you receive your
+                    birthday gift.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="love-card">
+
+                <div class="love-icon">
+                    <img src="./assets/images/icon/phone-icon.png" alt="Customer Service">
                 </div>
 
-                <!-- Image 3 -->
-                <div class="carousel-item">
-                    <img src="./assets/images/image/girl.png"
-                         class="testimonial-img"
-                         alt="Testimonial 3">
+                <h3>Friendly Customer Service</h3>
+
+                <p>
+                    You do not need to worry when you want to
+                    check your package. We will always answer
+                    whatever your questions. Just click on the chat
+                    icon and we will talk.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="love-card">
+
+                <div class="love-icon">
+                    <img src="./assets/images/icon/refund-icon.png" alt="Refund Process">
                 </div>
+
+                <h3>Refund Process</h3>
+
+                <p>
+                    Refund is a such bad experience and we don’t
+                    want that thing happen to you. But when it’s
+                    happen we will make sure you will through
+                    smooth and friendly process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FROM THE BLOG
+========================= -->
+
+<section class="blog-section">
+
+    <div class="container">
+
+        <h2>From The Blog</h2>
+
+        <div class="blog-content">
+
+            <!-- BLOG IMAGE -->
+            <div class="blog-image">
+
+                <img
+                    src="./assets/images/product/shope.png"
+                    alt="Blog"
+                >
+
+            </div>
+
+
+            <!-- BLOG TEXT -->
+            <div class="blog-text">
+
+                <h3>
+                    How to combine your
+                    daily outfit to looks
+                    fresh and cool.
+                </h3>
+
+                <p>
+                    Maybe you don’t need to buy new clothes to have nice,
+                    cool, fresh looking outfit everyday. Maybe what you
+                    need is to combine your clothes collections.
+                    Mix and match is the key.
+                </p>
+
+                <!-- BOTTOM BUTTON -->
+                <button class="read-more-btn">
+                    Read more
+                </button>
 
             </div>
 
@@ -973,65 +1256,71 @@
 
 </section>
 <footer class="footer">
-    <div class="container">
-        <div class="row gy-4">
 
-            <!-- Left -->
-            <div class="col-lg-5 col-md-12">
-                <h2 class="footer-logo">ECOMMERCE</h2>
+    <div class="footer-container">
 
-                <p class="footer-text">
-                    Ecommerce is a free UI Kit from Paperpillar that you can use
-                    for your personal or commercial project.
-                </p>
+        <!-- LEFT -->
+        <div class="footer-brand">
 
-                <div class="subscribe">
-                    <input type="email" placeholder="Type your email address">
-                    <button type="submit">Submit</button>
-                </div>
-            </div>
+            <h2>ECOMMERCE</h2>
 
-            <!-- Popular -->
-            <div class="col-lg-2 col-md-4 col-6">
-                <h6>POPULAR</h6>
+            <p>
+                Ecommerce is a free UI Kit from Paperpillar<br>
+                that you can use for your personal or<br>
+                commercial project.
+            </p>
 
-                <ul>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">T-Shirt</a></li>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Hat</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
-            </div>
+            <div class="subscribe">
+                <input
+                    type="email"
+                    placeholder="Type your email address"
+                >
 
-            <!-- Menu -->
-            <div class="col-lg-2 col-md-4 col-6">
-                <h6>MENU</h6>
-
-                <ul>
-                    <li><a href="#">All Category</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">Special Events</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-
-            <!-- Other -->
-            <div class="col-lg-3 col-md-4 col-12">
-                <h6>OTHER</h6>
-
-                <ul>
-                    <li><a href="#">Tracking Package</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+                <button>Submit</button>
             </div>
 
         </div>
+
+
+        <!-- RIGHT -->
+        <div class="footer-menu">
+
+            <div class="footer-menu-column">
+                <h4>POPULAR</h4>
+
+                <a href="#">Shoes</a>
+                <a href="#">T-Shirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Hat</a>
+                <a href="#">Accessories</a>
+            </div>
+
+
+            <div class="footer-menu-column">
+                <h4>MENU</h4>
+
+                <a href="#">All Category</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Special Events</a>
+                <a href="#">Testimonial</a>
+                <a href="#">Blog</a>
+            </div>
+
+
+            <div class="footer-menu-column">
+                <h4>OTHER</h4>
+
+                <a href="#">Tracking Package</a>
+                <a href="#">FAQ</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms and Conditions</a>
+            </div>
+
+        </div>
+
     </div>
+
 </footer>
 </body>
 </html>

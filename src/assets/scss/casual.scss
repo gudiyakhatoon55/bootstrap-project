@@ -175,3 +175,40 @@
 }
 
 }
+@media (max-width:576px){
+
+/* Right side top images hide */
+.right-side{
+    display: none;
+}
+
+/* Desktop ke sirf image cards hide */
+.desktop-casual .col-lg-4:nth-child(2),
+.desktop-casual .col-lg-4:nth-child(3){
+    display: none;
+}
+
+/* Casual Inspirations text show rahe */
+.desktop-casual .col-lg-4:first-child{
+    display: block;
+    width: 100%;
+}
+
+/* Mobile scroll show */
+.mobile-scroll{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-scroll > div{
+    flex: 0 0 85%;
+}
+
+}

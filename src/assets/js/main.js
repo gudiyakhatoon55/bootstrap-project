@@ -23,3 +23,16 @@ buttons.forEach(button => {
         document.getElementById(filter + "-products").style.display = "block";
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById("mobileMenuBtn");
+    const menu = document.getElementById("mobileMenu");
+
+    button.addEventListener("click", function () {
+
+        menu.classList.toggle("active");
+
+    });
+
+});
