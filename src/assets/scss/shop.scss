@@ -1,0 +1,242 @@
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   WHY YOU'LL LOVE
+========================= */
+
+.love-section {
+    padding: 45px 0 40px;
+}
+
+.love-section h2 {
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 400;
+
+    margin: 0 0 40px;
+}
+
+
+/* CARDS */
+
+.love-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 70px;
+}
+
+.love-card {
+    min-width: 0;
+}
+
+
+/* DOWNLOADED ICON */
+
+.love-icon {
+    width: 82px;
+    height: 82px;
+
+    background: #111;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+.love-icon img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+    text-decoration: none !important;
+}
+
+
+/* CARD HEADING */
+
+.love-card h3 {
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 400;
+
+    margin: 0 0 10px;
+}
+
+
+/* CARD TEXT */
+
+.love-card p {
+    font-size: 14px;
+    line-height: 1.55;
+
+    color: #555;
+
+    max-width: 330px;
+
+    margin: 0;
+}
+
+
+/* =========================
+   FROM THE BLOG
+========================= */
+
+.blog-section {
+    padding: 40px 0 60px;
+}
+
+
+/* HEADING */
+
+.blog-section h2 {
+    font-size: 42px;
+    line-height: 1.1;
+    font-weight: 400;
+
+    margin: 0 0 25px;
+}
+
+
+/* IMAGE + TEXT */
+
+.blog-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+
+/* BLOG IMAGE */
+
+.blog-image {
+    width: 100%;
+    height: 300px;
+
+    overflow: hidden;
+
+    border-radius: 24px;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* BLOG TEXT */
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.blog-text h3 {
+    font-size: 42px;
+    line-height: 1.05;
+    font-weight: 400;
+
+    margin: 0 0 20px;
+}
+
+.blog-text p {
+    font-size: 14px;
+    line-height: 1.55;
+
+    color: #555;
+
+    max-width: 500px;
+
+    margin: 0 0 25px;
+}
+
+
+/* BOTTOM BUTTON */
+
+.read-more-btn {
+    background: #111;
+    color: #fff;
+
+    border: 1px solid #111;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    background: #fff;
+    color: #111;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .love-section h2 {
+        font-size: 32px;
+    }
+
+    .love-cards {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .love-card p {
+        max-width: 100%;
+    }
+
+    .blog-section h2 {
+        font-size: 32px;
+    }
+
+    .blog-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .blog-image {
+        height: 280px;
+    }
+
+    .blog-text h3 {
+        font-size: 32px;
+    }
+}
+

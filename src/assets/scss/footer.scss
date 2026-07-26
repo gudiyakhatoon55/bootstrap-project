@@ -1,76 +1,183 @@
-.footer{
-    background:$primary;
-    padding:$p-80 0;
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    height: 300px;
+
+    background: #111;
+    color: #fff;
+
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
 }
 
-.footer-logo{
-    color:$white;
-    font-size:$fs-48;
-    font-weight:$fw-700;
+
+/* =========================
+   FOOTER CONTAINER
+========================= */
+
+.footer-container {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 0 60px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 100px;
 }
 
-.footer-text{
-    color:$secondary;
-    font-size:$fs-16;
-    line-height:28px;
-    margin:$p-20 0 $p-30;
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+    flex: 1;
 }
 
-.subscribe{
-    display:flex;
-    gap:15px;
+.footer-brand h2 {
+    margin: 0 0 14px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+
+    color: #fff;
 }
 
-.subscribe input{
-    width:250px;
-    height:50px;
-    border:1px solid $border;
-    border-radius:$radius-lg;
-    background:transparent;
-    color:$white;
-    padding:0 20px;
+.footer-brand p {
+    margin: 0 0 22px;
+
+    font-size: 12px;
+    line-height: 1.6;
+
+    color: #777;
 }
 
-.subscribe button{
-    width:110px;
-    height:50px;
-    border:none;
-    border-radius:$radius-lg;
-    background:$white;
-    color:$primary;
-    transition:$transition;
+
+/* =========================
+   SUBSCRIBE
+========================= */
+
+.subscribe {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: 100%;
+    max-width: 300px;
 }
 
-.footer h6{
-    color:$white;
-    margin-bottom:$p-20;
+.subscribe input {
+    width: 200px;
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: 1px solid #777;
+    border-radius: 25px;
+
+    background: transparent;
+    color: #fff;
+
+    outline: none;
+
+    font-size: 11px;
+    box-sizing: border-box;
 }
 
-.footer ul li{
-    margin-bottom:12px;
+.subscribe input::placeholder {
+    color: #888;
 }
 
-.footer ul li a{
-    color:$secondary;
+.subscribe button {
+    width: 70px;
+    height: 38px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
 }
 
-.footer ul li a:hover{
-    color:$white;
+
+/* =========================
+   FOOTER MENU
+========================= */
+
+.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 50%;
+    gap: 65px;
 }
 
-@media(max-width:991px){
+.footer-menu-column {
+    display: flex;
+    flex-direction: column;
+}
 
-    .footer{
-        text-align:center;
+.footer-menu-column h4 {
+    margin: 0 0 18px;
+
+    color: #fff;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.footer-menu-column a {
+    margin-bottom: 11px;
+
+    color: #777;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    line-height: 1.4;
+}
+
+.footer-menu-column a:hover {
+    color: #fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 40px 0;
     }
 
-    .subscribe{
-        flex-direction:column;
+    .footer-container {
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 40px;
     }
 
-    .subscribe input,
-    .subscribe button{
-        width:100%;
+    .footer-menu {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
-
 }

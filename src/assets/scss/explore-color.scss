@@ -1,231 +1,126 @@
-/*=========================
-Explore by Colors
-=========================*/
 
-.color-section{
-
-    width:100%;
-    height:210px;
-
-    padding-left:60px;
-    padding-right:60px;
-
+.explore-title {
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1.15;
 }
 
-
-.color-wrapper{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    gap:40px;
-
+.color-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+    max-width: 650px;
+    justify-content: flex-start;
 }
 
-
-/* Left Heading */
-
-.color-title h2{
-
-    font-size:48px;
-
-    font-weight:500;
-
-    color:#111;
-
-    white-space:nowrap;
-
+.color-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .45rem .85rem;
+    border: 1px solid #8a8a8a;
+    border-radius: 50px;
+    background: #fff;
+    color: #222;
+    font-size: .72rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
 }
 
-.color-title{
-
-    flex:1;
-
+.color {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    flex-shrink: 0;
 }
 
+.red { background: #e56b68; }
+.lime { background: #b7e14a; }
+.navy { background: #1f3f7c; }
 
-/* Right Buttons */
-
-.color-wrapper{
-
-    width:100%;
-
-    display:flex;
-
-    align-items:center;
-
+.white {
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
+.sky { background: #63aeea; }
+.purple { background: #a94cf4; }
+.pink { background: #ef4d92; }
+.yellow { background: #f4c63d; }
+.green { background: #4b9a6c; }
 
+/* Laptop & Tablet */
+@media (max-width: 991.98px) {
 
-.color-row{
+    .explore-title {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+    }
 
-    display:flex;
+    .color-list {
+        max-width: 100%;
+        gap: .65rem;
+        justify-content: flex-start;
+    }
 
-    gap:10px;
+    .color-btn {
+        font-size: .7rem;
+        padding: .45rem .8rem;
+    }
 
+    .color {
+        width: 20px;
+        height: 20px;
+    }
 }
 
+/* Mobile */
+@media (max-width: 767.98px) {
 
+    .explore-title {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
 
-/* Single Color Button */
+    .color-list {
+        max-width: 100%;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
 
-.color-btn{
+    .color-btn {
+        padding: .45rem .7rem;
+        font-size: .68rem;
+    }
 
-    height:57px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    padding-left:12px;
-
-    padding-right:20px;
-
-    border:1px solid #ddd;
-
-    border-radius:200px;
-
-    background:#fff;
-
-    font-size:14px;
-
-    font-weight:500;
-
-    white-space:nowrap;
-
-    cursor:pointer;
-
-}
-.color-buttons{
-
-    margin-left:auto;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:8px;
-
+    .color {
+        width: 18px;
+        height: 18px;
+    }
 }
 
+/* Small Mobile */
+@media (max-width: 575.98px) {
 
-/* Color Circle */
+    .explore-title {
+        font-size: 1.8rem;
+    }
 
-.color-btn span{
+    .color-list {
+        gap: .45rem;
+    }
 
-    width:25px;
+    .color-btn {
+        font-size: .65rem;
+        padding: .4rem .65rem;
+    }
 
-    height:25px;
-
-    border-radius:50%;
-
-    flex-shrink:0;
-
-}
-
-
-/* Colors */
-
-.red{
-    background:#f6b6b6;
-}
-
-.lime{
-    background:#9cff00;
-}
-
-.navy{
-    background:#001f54;
-}
-
-.white{
-    background:#ffffff;
-    border:1px solid #ccc;
-}
-
-.sky{
-    background:#7ec8ff;
-}
-
-.purple{
-    background:#8e44ad;
-}
-
-.pink{
-    background:#ff8fcf;
-}
-
-.yellow{
-    background:#ffd93d;
-}
-
-.green{
-    background:#0b5d1e;
-}
-
-@media (max-width:991px){
-
-.explore-color{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:30px;
-}
-
-.explore-color h2{
-    font-size:48px;
-    width:100%;
-}
-
-.color-list{
-    width:100%;
-    justify-content:flex-start;
-}
-
-}
-
-@media (max-width:767px){
-
-.explore-color{
-    padding:50px 0;
-}
-
-.explore-color h2{
-    font-size:38px;
-}
-
-.color-list{
-    justify-content:center;
-    gap:10px;
-}
-
-.color-btn{
-    padding:10px 16px;
-    font-size:14px;
-}
-
-}
-
-@media (max-width:480px){
-
-.explore-color h2{
-    font-size:32px;
-}
-
-.color-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:12px;
-}
-
-.color-btn{
-    width:100%;
-    justify-content:center;
-}
-
+    .color {
+        width: 18px;
+        height: 18px;
+    }
 }

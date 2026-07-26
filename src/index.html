@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E commerce</title>
+    <!-- ✅ Ye hona chahiye -->
+    <link rel="stylesheet" href="./assets/scss/styles.scss">
+
+    <link rel="icon" href="./assets/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script type="module" src="./assets/js/main.js"></script>
 </head>
 <body>
+    
 <header class="header">
 
     <!-- Top Header -->
@@ -37,28 +42,46 @@
                 <h2>ECOMMERCE</h2>
             </div>
 
-            <div class="search-box">
-                <input type="text" placeholder="Search here">
-                <button>
-                    <i class="bi bi-search"></i>
-                </button>
-            </div>
+            <!-- MOBILE BUTTON -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="bi bi-list"></i>
+            </button>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">All Category</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">Special Event</a></li>
-                </ul>
-            </nav>
+            <!-- MENU CONTENT -->
+            <div class="mobile-menu" id="mobileMenu">
 
-            <div class="icons">
-                <i class="bi bi-heart"></i>
-                <i class="bi bi-person"></i>
-                <i class="bi bi-cart3"></i>
+                <div class="search-box">
+                    <input type="text" placeholder="Search here">
+
+                    <button>
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div>
+
+                <nav class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                All Category
+                                <i class="bi bi-chevron-down"></i>
+                            </a>
+                        </li>
+
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Special Event</a></li>
+                    </ul>
+                </nav>
+
+                <div class="icons">
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#"><i class="bi bi-person"></i></a>
+                    <a href="#"><i class="bi bi-cart3"></i></a>
+                </div>
+
             </div>
 
         </div>
+    </div>
     </div>
 
 </header>
@@ -138,783 +161,1093 @@
             </div>
 
         </div>
+        <div class="mobile-scroll">
 
-    </div>
-</section>
-<!-- Casual Inspirations -->
-<section class="casual-section">
-    <div class="container">
-
-        <div class="row g-4 align-items-center">
-
-            <!-- Left Content -->
-            <div class="col-lg-4">
-
-                <div class="casual-content">
-
-                    <h2>
-                        Casual
-                        <br>
-                        Inspirations
-                    </h2>
-
-                    <p>
-                        Our favorite combinations for casual outfit that can inspire
-                        you to apply on your daily activity.
-                    </p>
-
-                    <a href="#" class="browse-btn">
-                        BROWSE INSPIRATIONS
-                    </a>
-
+            <!-- Outdoor Active -->
+            <div class="small-card">
+                <img src="./assets/images/image/rigth-top-image.png" alt="">
+                <div class="small-content">
+                    <h3>Outdoor <br> Active</h3>
                 </div>
-
             </div>
 
-            <!-- Card 1 -->
-            <div class="col-lg-4">
-
-                <div class="casual-card">
-
-                    <img src="./assets/images/image/man-image.png" alt="">
-
-                    <div class="casual-overlay">
-
-                        <h3>
-                            Say it
-                            <br>
-                            with Shirt
-                        </h3>
-
-                        <div class="arrow-btn">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </div>
-
-                    </div>
-
+            <!-- Casual Comfort -->
+            <div class="small-card">
+                <img src="./assets/images/image/right-image.png" alt="">
+                <div class="small-content">
+                    <h3>Casual <br> Comfort</h3>
                 </div>
-
             </div>
 
-            <!-- Card 2 -->
-            <div class="col-lg-4">
-
-                <div class="casual-card">
-
-                    <img src="./assets/images/image/girl-image.png" alt="">
-
-                    <div class="casual-overlay">
-
-                        <h3>
-                            Funky never
-                            <br>
-                            get old
-                        </h3>
-
-                        <div class="arrow-btn">
-                            <i class="bi bi-arrow-up-right"></i>
-                        </div>
-
+            <!-- Say it with Shirt -->
+            <div class="casual-card">
+                <img src="./assets/images/image/man-image.png" alt="">
+                <div class="casual-overlay">
+                    <h3>Say it <br> with Shirt</h3>
+                    <div class="arrow-btn">
+                        <i class="bi bi-arrow-up-right"></i>
                     </div>
-
                 </div>
+            </div>
 
+            <!-- Funky never get old -->
+            <div class="casual-card">
+                <img src="./assets/images/image/girl-image.png" alt="">
+                <div class="casual-overlay">
+                    <h3>Funky never <br> get old</h3>
+                    <div class="arrow-btn">
+                        <i class="bi bi-arrow-up-right"></i>
+                    </div>
+                </div>
             </div>
 
         </div>
 
+        <div class="desktop-casual">
+            <div class="row mt-3 g-3">
+
+                <!-- Left -->
+                <div class="col-lg-4">
+                    <div class="casual-content">
+                        <h2>Casual Inspirations</h2>
+
+                        <p>
+                            Our favorite combinations for casual outfit that can inspire
+                            you to apply on your daily activity.
+                        </p>
+
+                        <a href="#" class="browse-btn">
+                            BROWSE INSPIRATIONS
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Middle -->
+                <div class="col-lg-4">
+                    <div class="casual-card">
+                        <img src="./assets/images/image/man-image.png" alt="">
+                        <div class="casual-overlay">
+                            <h3>Say it <br> with Shirt</h3>
+                            <div class="arrow-btn">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="col-lg-4">
+                    <div class="casual-card">
+                        <img src="./assets/images/image/girl-image.png" alt="">
+                        <div class="casual-overlay">
+                            <h3>Funky never <br> get old</h3>
+                            <div class="arrow-btn">
+                                <i class="bi bi-arrow-up-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
-<section class="trending-section">
 
+<!-- Trending Section -->
+<section class="trending py-5">
     <div class="container">
 
         <!-- Heading -->
+        <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap">
+            <h2 class="fw-bold">Trending</h2>
 
-        <div class="trending-header">
-
-            <h2>Trending</h2>
-
-            <div class="trending-btn">
-                <button data-filter="shorts">SHORTS</button>
-                <button data-filter="hat">HAT</button>
-                <button data-filter="jackets">JACKETS</button>
-                <button data-filter="shoes" class="active">SHOES</button>
-                <button data-filter="tshirt">T-SHIRT</button>
+            <div class="category-btns d-flex gap-2 flex-wrap">
+                <button class="btn btn-filter" data-filter="shorts">SHORTS</button>
+                <button class="btn btn-filter" data-filter="hat">HAT</button>
+                <button class="btn btn-filter" data-filter="jacket">JACKETS</button>
+                <button class="btn btn-filter active" data-filter="shoes">SHOES</button>
+                <button class="btn btn-filter" data-filter="t-shirt">T-SHIRT</button>
             </div>
-
         </div>
-
         <!-- Products -->
+        <div id="shoes-products" class="products">
+            <div class="row g-4">
 
-        <div class="trending-grid">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img position-relative">
+                            <img src="./assets/images/product/casual-shoe.png" class="img-fluid rounded-4" alt="">
+                           <button class="wishlist-btn red-bg">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
 
-            <!-- Product 1 -->
-
-            <div class="product-card shoes card1">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/casual-shoe.png" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Nike Air Max</h6>
+                            <span>$225</span>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="product-info">
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img position-relative">
+                            <img src="./assets/images/product/skateboard-shoe.png" class="img-fluid rounded-4" alt="">
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
 
-                    <h5>Casual Shoe</h5>
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Running Shoe</h6>
+                            <span>$180</span>
+                        </div>
+                    </div>
+                </div>
 
-                    <span>$225</span>
+                <!-- Product 3 Large -->
+                <div class="col-lg-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img shoe-img position-relative">
+                            <img src="./assets/images/product/basket-shoe.png" class="img-fluid rounded-4 w-100" alt="">
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
 
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Basketball Shoe</h6>
+                            <span>$250</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 Large -->
+                <div class="col-lg-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img position-relative">
+                            <img src="./assets/images/product/skateboard-shoe1.png" class="img-fluid rounded-4 w-100" alt="">
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Sports Sneaker</h6>
+                            <span>$210</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img position-relative">
+                            <img src="./assets/images/product/skateboard-shoe2.png" class="img-fluid rounded-4" alt="">
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">White Sneaker</h6>
+                            <span>$195</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shoes">
+                    <div class="card border-0">
+                        <div class="product-img shoe-img position-relative">
+                            <img src="./assets/images/product/sportwear-shoe.png" class="img-fluid rounded-4" alt="">
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Classic Shoes</h6>
+                            <span>$160</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hat-products" class="products">
+
+            <div class="row g-4">
+
+                <!-- Hat 1 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat1.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                           <button class="wishlist-btn red-bg">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Red Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Hat 2 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat2.png" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Hat 3 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat3.png" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hat 4 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat4.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hat 5 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat5.png" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Hat 6 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="hat">
+                    <div class="card border-0">
+
+                        <div class="product-img hat-imag position-relative">
+                            <img src="./assets/images/product/hat6.avif" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">Hat</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Product 2 -->
+        </div>
+        <div id="shorts-products" class="products">
 
-            <div class="product-card shoes card2">
+            <div class="row g-4">
 
-                <div class="product-image">
+                <!-- shorts 1 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
 
-                    <img src="./assets/images/product/skateboard-shoe.png" alt="">
+                        <div class="product-imag shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts1.jpg" 
+                            class="img-fluid rounded-4" alt="">
 
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
+                            <button class="wishlist-btn red-bg">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
                     </div>
-
                 </div>
 
-                <div class="product-info">
 
-                    <h5>Skateboard Shoe</h5>
+                <!-- shorts 2 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
 
-                    <span>$125</span>
+                        <div class="product-img shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts2.jpg" 
+                            class="img-fluid rounded-4" alt="">
 
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- shorts 3 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
+
+                        <div class="product-img shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts3.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- shorts 4 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
+
+                        <div class="product-img shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts4.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- shorts 5 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
+
+                        <div class="product-img shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts5.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- shorts 6 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="shorts">
+                    <div class="card border-0">
+
+                        <div class="product-img shorts-imag position-relative">
+                            <img src="./assets/images/product/shorts6.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">shorts</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Product 3 -->
+        </div>  
+        <div id="jacket-products" class="products">
 
-            <div class="product-card shoes card3">
+            <div class="row g-4">
 
-                <div class="product-image">
+                <!-- jacket 1 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
 
-                    <img src="./assets/images/product/skateboard-shoe1.png" alt="">
+                        <div class="product-imag jacket-imag position-relative">
+                            <img src="./assets/images/product/jackets1.jpg" 
+                            class="img-fluid rounded-4" alt="">
 
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
+                            <button class="wishlist-btn red-bg">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
                     </div>
-
                 </div>
 
-                <div class="product-info">
 
-                    <h5>Skateboard Shoe</h5>
+                <!-- jacket 2 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
 
-                    <span>$125</span>
+                        <div class="product-img jacket-imag position-relative">
+                            <img src="./assets/images/product/jackets2.jpg" 
+                            class="img-fluid rounded-4" alt="">
 
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- jacket 3 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
+
+                        <div class="product-img jacket-imag position-relative">
+                            <img src="./assets/images/product/jackets3.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- jacket 4 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
+
+                        <div class="product-img jacket-imag position-relative">
+                            <img src="./assets/images/product/jackets4.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- jacket 5 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
+
+                        <div class="product-img jacket-imag position-relative">
+                            <img src="./assets/images/product/jackets5.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- jacket 6 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="jacket">
+                    <div class="card border-0">
+
+                        <div class="product-img jacket-imag position-relative">
+                            <img src="./assets/images/product/shorts6.jpg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">jacket</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Product 4 -->
+        </div>  
+        <div id="t-shirt-products" class="products">
 
-            <div class="product-card shoes card4">
+            <div class="row g-4">
 
-                <div class="product-image">
+                <!-- t-shirt 1 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
 
-                    <img src="./assets/images/product/skateboard-shoe2.png" alt="">
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt1.jpeg" 
+                            class="img-fluid rounded-4" alt="">
 
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
+                            <button class="wishlist-btn red-bg">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
                     </div>
-
                 </div>
 
-                <div class="product-info">
 
-                    <h5>Running Shoe</h5>
+                <!-- t-shirt 2 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
 
-                    <span>$199</span>
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt2.jpeg" 
+                            class="img-fluid rounded-4" alt="">
 
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- t-shirt 3 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
+
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt3.jpeg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- t-shirt 4 -->
+                <div class="col-lg-6 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
+
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt4.jpeg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- t-shirt 5 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
+
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt5.jpeg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- t-shirt 6 -->
+                <div class="col-lg-3 col-md-6 product-card" data-category="t-shirt">
+                    <div class="card border-0">
+
+                        <div class="product-img t-shirt-imag position-relative">
+                            <img src="./assets/images/product/t-shirt6.jpeg" 
+                            class="img-fluid rounded-4" alt="">
+
+                            <button class="wishlist-btn">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <div class="pt-3">
+                            <h6 class="fw-semibold mb-1">t-shirt</h6>
+                            <span>$60</span>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
-            <!-- Product 5 -->
+        </div> 
 
-            <div class="product-card shoes card5">
+    </div>
+</section>
+<section class="py-4">
+    <div class="container">
 
-                <div class="product-image">
+        <hr class="my-4">
 
-                    <img src="./assets/images/product/basket-shoe.png" alt="">
+            <div class="row align-items-center">
 
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
+                <!-- Left Heading -->
+                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                    <h2 class="explore-title mb-0">
+                        Explore <br>
+                        by Colors
+                    </h2>
                 </div>
 
-                <div class="product-info">
+                <!-- Right Buttons -->
+                <div class="col-lg-9 col-md-12">
+                    <div class="d-flex flex-wrap gap-2 color-list">
 
-                    <h5>Basket Shoe</h5>
+                        <a href="#" class="color-btn">
+                            <span class="color red"></span>
+                            RED PASTEL
+                        </a>
 
-                    <span>$149</span>
+                        <a href="#" class="color-btn">
+                            <span class="color lime"></span>
+                            LIME GREEN
+                        </a>
 
+                        <a href="#" class="color-btn">
+                            <span class="color navy"></span>
+                            NAVY BLUE
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color white"></span>
+                            CLEAN WHITE
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color sky"></span>
+                            BLUE SKY
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color purple"></span>
+                            PURPLE
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color pink"></span>
+                            PINK
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color yellow"></span>
+                            YELLOW
+                        </a>
+
+                        <a href="#" class="color-btn">
+                            <span class="color green"></span>
+                            DARK GREEN
+                        </a>
+
+                    </div>
                 </div>
 
             </div>
+        </hr>   
+    </div>
+</section>
+<section class="testimonial-section py-4">
+    <div class="container">
 
-            <!-- Product 6 -->
+        <div id="testimonialSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
 
-            <div class="product-card shoes card6">
+            <div class="carousel-inner rounded-5">
 
-                <div class="product-image">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="position-relative overflow-hidden rounded-5">
 
-                    <img src="./assets/images/product/sportwear-shoe.png" alt="">
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
 
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
                     </div>
-
                 </div>
 
-                <div class="product-info">
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="position-relative overflow-hidden rounded-5">
 
-                    <h5>sportwear</h5>
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
 
-                    <span>$165</span>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
 
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="position-relative overflow-hidden rounded-5">
+
+                        <img src="./assets/images/image/girl.png" class="w-100 testimonial-img" alt="testimonial">
+
+                        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+
+                            <div class="text-white px-4 px-md-5">
+
+                                <p class="small mb-2 text-light">
+                                    What people said
+                                </p>
+
+                                <h2 class="display-5 fw-light lh-1 mb-3">
+                                    Love the way they<br>
+                                    handle the order.
+                                </h2>
+
+                                <p class="small testimonial-text mb-4">
+                                    Very professional and friendly at the same time. They packed
+                                    the order on schedule and the detail of their wrapping is top
+                                    notch. One of my best experience for buying online items.
+                                    Surely will come back for another purchase.
+                                </p>
+
+                                <h6 class="fw-semibold mb-1">
+                                    Samantha William
+                                </h6>
+
+                                <small class="text-light">
+                                    Fashion Enthusiast
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
-            <div class="product-card shorts card1">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts1.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>short</h5>
-
-                    <span>$225</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 2 -->
-
-            <div class="product-card shorts card2">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts2.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Shorts</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 3 -->
-
-            <div class="product-card shorts card3">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts3.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Shorts</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 4 -->
-
-            <div class="product-card shorts card4">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts4.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Shorts</h5>
-
-                    <span>$199</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 5 -->
-
-            <div class="product-card shorts card5">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts5.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>shorts</h5>
-
-                    <span>$149</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 6 -->
-
-            <div class="product-card shorts card6">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/shorts6.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Shorts</h5>
-
-                    <span>$165</span>
-
-                </div>
-
-            </div>
-            <div class="product-card hat card1">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat1.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$225</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 2 -->
-
-            <div class="product-card hat card2">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat2.png" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 3 -->
-
-            <div class="product-card hat card3">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat3.png" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 4 -->
-
-            <div class="product-card hat card4">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat4.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$199</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 5 -->
-
-            <div class="product-card hat card5">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat5.png" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$149</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 6 -->
-
-            <div class="product-card hat card6">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/hat6.avif" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>Hat</h5>
-
-                    <span>$165</span>
-
-                </div>
-            </div>
-            <div class="product-card jackets card1">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets1.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$225</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 2 -->
-
-            <div class="product-card jackets card2">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets2.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 3 -->
-
-            <div class="product-card jackets card3">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets3.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$125</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 4 -->
-
-            <div class="product-card jackets card4">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets4.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$199</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 5 -->
-
-            <div class="product-card jackets card5">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets5.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$149</span>
-
-                </div>
-
-            </div>
-
-            <!-- Product 6 -->
-
-            <div class="product-card jackets card6">
-
-                <div class="product-image">
-
-                    <img src="./assets/images/product/jackets6.jpg" alt="">
-
-                    <div class="heart">
-                        <i class="bi bi-heart"></i>
-                    </div>
-
-                </div>
-
-                <div class="product-info">
-
-                    <h5>jackets</h5>
-
-                    <span>$165</span>
-
-                </div>
-            
 
         </div>
 
     </div>
-
 </section>
-<section class="color-section">
+<!-- =========================
+     WHY YOU'LL LOVE
+========================= -->
 
-<div class="container">
-
-    <div class="color-wrapper">
-
-        <div class="color-title">
-            <h2>Explore by Colors</h2>
-        </div>
-
-
-        <div class="color-buttons">
-
-            <div class="color-row">
-                <!-- 4 buttons yaha -->
-        
-
-                <button class="color-btn">
-                    <span class="red"></span> RED PASTEL
-                </button>
-
-                <button class="color-btn">
-                    <span class="lime"></span> LIME GREEN
-                </button>
-
-                <button class="color-btn">
-                    <span class="navy"></span> NAVY BLUE
-                </button>
-
-                <button class="color-btn">
-                    <span class="white"></span> CLEAN WHITE
-                </button>
-            </div>
-
-
-            <div class="color-row">
-                <!-- 5 buttons yaha -->
-
-                <button class="color-btn">
-                    <span class="sky"></span> BLUE SKY
-                </button>
-
-                <button class="color-btn">
-                    <span class="purple"></span> PURPLE
-                </button>
-
-                <button class="color-btn">
-                    <span class="pink"></span> PINK
-                </button>
-
-                <button class="color-btn">
-                    <span class="yellow"></span> YELLOW
-                </button>
-
-                <button class="color-btn">
-                    <span class="green"></span> DARK GREEN
-                </button>
-
-    
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section>
-<section class="testimonial-section">
+<section class="love-section">
 
     <div class="container">
 
-        <div class="testimonial-card">
+        <h2>
+            Why you’ll love to<br>
+            shop on our website
+        </h2>
 
-            <img src="./assets/images/image/girl.png" alt="">
+        <div class="love-cards">
 
-            <div class="testimonial-content">
+            <!-- CARD 1 -->
+            <div class="love-card">
 
-                <span>What people said</span>
+                <div class="love-icon">
+                    <img src="./assets/images/icon/heart-icon.png" alt="Take care with love">
+                </div>
 
-                <h2>
-                    Love the way they
-                    <br>
-                    handle the order.
-                </h2>
+                <h3>Take care with love</h3>
 
                 <p>
-                    Very professional and friendly at the same time. They packed
-                    the order on schedule and the detail of their wrapping is top
-                    notch. One of my best experience for buying online items.
-                    Surely will come back for another purchase.
+                    We take your package with full of attention
+                    and of course full of love. We want to make sure
+                    you’ll receive your package like you receive your
+                    birthday gift.
                 </p>
 
-                <h5>Samantha William</h5>
+            </div>
 
-                <small>Fashion Enthusiast</small>
+
+            <!-- CARD 2 -->
+            <div class="love-card">
+
+                <div class="love-icon">
+                    <img src="./assets/images/icon/phone-icon.png" alt="Customer Service">
+                </div>
+
+                <h3>Friendly Customer Service</h3>
+
+                <p>
+                    You do not need to worry when you want to
+                    check your package. We will always answer
+                    whatever your questions. Just click on the chat
+                    icon and we will talk.
+                </p>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="love-card">
+
+                <div class="love-icon">
+                    <img src="./assets/images/icon/refund-icon.png" alt="Refund Process">
+                </div>
+
+                <h3>Refund Process</h3>
+
+                <p>
+                    Refund is a such bad experience and we don’t
+                    want that thing happen to you. But when it’s
+                    happen we will make sure you will through
+                    smooth and friendly process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FROM THE BLOG
+========================= -->
+
+<section class="blog-section">
+
+    <div class="container">
+
+        <h2>From The Blog</h2>
+
+        <div class="blog-content">
+
+            <!-- BLOG IMAGE -->
+            <div class="blog-image">
+
+                <img
+                    src="./assets/images/product/shope.png"
+                    alt="Blog"
+                >
+
+            </div>
+
+
+            <!-- BLOG TEXT -->
+            <div class="blog-text">
+
+                <h3>
+                    How to combine your
+                    daily outfit to looks
+                    fresh and cool.
+                </h3>
+
+                <p>
+                    Maybe you don’t need to buy new clothes to have nice,
+                    cool, fresh looking outfit everyday. Maybe what you
+                    need is to combine your clothes collections.
+                    Mix and match is the key.
+                </p>
+
+                <!-- BOTTOM BUTTON -->
+                <button class="read-more-btn">
+                    Read more
+                </button>
 
             </div>
 
@@ -924,65 +1257,71 @@
 
 </section>
 <footer class="footer">
-    <div class="container">
-        <div class="row gy-4">
 
-            <!-- Left -->
-            <div class="col-lg-5 col-md-12">
-                <h2 class="footer-logo">ECOMMERCE</h2>
+    <div class="footer-container">
 
-                <p class="footer-text">
-                    Ecommerce is a free UI Kit from Paperpillar that you can use
-                    for your personal or commercial project.
-                </p>
+        <!-- LEFT -->
+        <div class="footer-brand">
 
-                <div class="subscribe">
-                    <input type="email" placeholder="Type your email address">
-                    <button type="submit">Submit</button>
-                </div>
-            </div>
+            <h2>ECOMMERCE</h2>
 
-            <!-- Popular -->
-            <div class="col-lg-2 col-md-4 col-6">
-                <h6>POPULAR</h6>
+            <p>
+                Ecommerce is a free UI Kit from Paperpillar<br>
+                that you can use for your personal or<br>
+                commercial project.
+            </p>
 
-                <ul>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">T-Shirt</a></li>
-                    <li><a href="#">Jackets</a></li>
-                    <li><a href="#">Hat</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
-            </div>
+            <div class="subscribe">
+                <input
+                    type="email"
+                    placeholder="Type your email address"
+                >
 
-            <!-- Menu -->
-            <div class="col-lg-2 col-md-4 col-6">
-                <h6>MENU</h6>
-
-                <ul>
-                    <li><a href="#">All Category</a></li>
-                    <li><a href="#">Gift Cards</a></li>
-                    <li><a href="#">Special Events</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-
-            <!-- Other -->
-            <div class="col-lg-3 col-md-4 col-12">
-                <h6>OTHER</h6>
-
-                <ul>
-                    <li><a href="#">Tracking Package</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Terms & Conditions</a></li>
-                </ul>
+                <button>Submit</button>
             </div>
 
         </div>
+
+
+        <!-- RIGHT -->
+        <div class="footer-menu">
+
+            <div class="footer-menu-column">
+                <h4>POPULAR</h4>
+
+                <a href="#">Shoes</a>
+                <a href="#">T-Shirt</a>
+                <a href="#">Jackets</a>
+                <a href="#">Hat</a>
+                <a href="#">Accessories</a>
+            </div>
+
+
+            <div class="footer-menu-column">
+                <h4>MENU</h4>
+
+                <a href="#">All Category</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Special Events</a>
+                <a href="#">Testimonial</a>
+                <a href="#">Blog</a>
+            </div>
+
+
+            <div class="footer-menu-column">
+                <h4>OTHER</h4>
+
+                <a href="#">Tracking Package</a>
+                <a href="#">FAQ</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Terms and Conditions</a>
+            </div>
+
+        </div>
+
     </div>
+
 </footer>
 </body>
 </html>

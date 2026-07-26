@@ -1,3 +1,4 @@
+
 .casual-section{
     padding:20px 0 60px;
 }
@@ -129,63 +130,86 @@
     color:#111;
 }
 
-/* Responsive */
-
-@media(max-width:991px){
-
-.casual-content{
-
-    margin-bottom:30px;
-}
-
-.casual-content h2{
-
-    font-size:48px;
-}
-
-.casual-card{
-
-    height:320px;
-}
-
-.casual-overlay h3{
-
-    font-size:34px;
-}
-
-}
-
-@media(max-width:576px){
+@media (max-width:576px){
 
 .casual-section{
-
     padding:30px 0;
 }
 
-.casual-content h2{
+.casual-section .row{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap:16px;
+}
 
+// .casual-section .row::-webkit-scrollbar{
+//     display:none;
+// }
+
+.casual-section .col-lg-4{
+    flex:0 0 85%;
+    max-width:85%;
+}
+
+.casual-content h2{
     font-size:38px;
 }
 
 .casual-content p{
-
     width:100%;
 }
 
 .casual-card{
-
     height:260px;
 }
 
 .casual-overlay h3{
-
     font-size:28px;
 }
 
 .arrow-btn{
-
     width:42px;
     height:42px;
+}
+
+}
+@media (max-width:576px){
+
+/* Right side top images hide */
+.right-side{
+    display: none;
+}
+
+/* Desktop ke sirf image cards hide */
+.desktop-casual .col-lg-4:nth-child(2),
+.desktop-casual .col-lg-4:nth-child(3){
+    display: none;
+}
+
+/* Casual Inspirations text show rahe */
+.desktop-casual .col-lg-4:first-child{
+    display: block;
+    width: 100%;
+}
+
+/* Mobile scroll show */
+.mobile-scroll{
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+.mobile-scroll::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile-scroll > div{
+    flex: 0 0 85%;
 }
 
 }
