@@ -6,6 +6,17 @@ import '../scss/styles.scss';
 const buttons = document.querySelectorAll(".btn-filter");
 const products = document.querySelectorAll(".products");
 
+// Default me sab hide
+products.forEach(product => {
+    product.style.display = "none";
+});
+
+// Default SHOES show
+const defaultProduct = document.getElementById("shoes-products");
+if (defaultProduct) {
+    defaultProduct.style.display = "block";
+}
+
 buttons.forEach(button => {
     button.addEventListener("click", () => {
 
@@ -18,9 +29,13 @@ buttons.forEach(button => {
             product.style.display = "none";
         });
 
-        // Sirf selected product show
+        // Selected product show
         const filter = button.dataset.filter;
-        document.getElementById(filter + "-products").style.display = "block";
+        const selected = document.getElementById(filter + "-products");
+
+        if (selected) {
+            selected.style.display = "block";
+        }
     });
 });
 
